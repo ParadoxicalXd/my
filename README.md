@@ -14,7 +14,7 @@ A lightweight fork of Baileys with a few fixes and a small adjustment.
 
 #### 📨 Message Handling & Compatibility
 - 👉🏻 Added support for sending [interactive message](#-sending-interactive-messages) types (button, list, interactive, template, carousel).
-- 📩 Added support for [album messages](#%EF%B8%8F-album-image--video), [group status messages](#4%EF%B8%8F⃣-group-status), [sticker pack messages](#-sticker-pack), and several [payment-related messages](#-sending-payment-messages) (request payment, payment invite, order, invoice).
+- 📩 Added support for [album messages](#%EF%B8%8F-album-image--video), [group status messages](#4%EF%B8%8F⃣-group-status), [status mention messages](#%EF%B8%8F-status-mention), [sticker pack messages](#-sticker-pack), and several [payment-related messages](#-sending-payment-messages) (request payment, payment invite, order, invoice).
 - 📰 Simplified sending messages with ad thumbnails via [`externalAdReply`](#3%EF%B8%8F⃣-external-ad-reply) without requiring manual `contextInfo`.
 
 #### 🧩 Additional Message Options
@@ -358,6 +358,14 @@ sock.sendMessage(jid, {
    }
 }, {
    quoted: message
+})
+```
+
+##### 🎞️ Status Mention
+
+```javascript
+sock.sendMessage([jidA, jidB, jidC], {
+   text: 'Hello! 👋🏻'
 })
 ```
 

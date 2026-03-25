@@ -272,7 +272,7 @@ sock.sendMessage(jid, {
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN:Lia Wynn\n'
-            + 'ORG:Waiters;\n'
+            + 'ORG:Waitress;\n'
             + 'TEL;type=CELL;type=VOICE;waid=628123456789:+62 8123 4567 89\n'
             + 'END:VCARD'
 
